@@ -105,7 +105,7 @@ public class Controller {
 					lives=lives-1;		
 				}else if(worldy.getWhatsInLocation(eSuggestedLoc)=='.'){
 					score=score+1;		
-					System.out.println(score);
+					//System.out.println(score);
 				}
 				//and tidy up after collision	
 				int[] eTempLocAndAppearance ={eCurrentLoc[0],eCurrentLoc[1],(int)' '};
@@ -166,5 +166,9 @@ public class Controller {
 	public int[] getScoreAndLives(){
 		int[] scoreAndLives = {score,lives};
 		return scoreAndLives;
+	}
+	public int getScore(){
+		
+		return score;
 	}
 }

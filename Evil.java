@@ -25,8 +25,10 @@ public class Evil {
 	}
 	
 	public int[] suggestMove(){
+		int direction = upOrDown();
 		int [] location = {rowCoord,colCoord};
 		location[1] = colCoord-1;
+		location[0] = rowCoord-direction;
 
 		return location;
 
@@ -47,6 +49,18 @@ public class Evil {
 	}
 	public void setDead(boolean death){
 		dead = death;
+	}
+	public int upOrDown(){
+		int rand = (int) (Math.random() * 3);
+		int var=0;
+		if (rand==1)
+			var=-1;
+		else if (rand==2)
+			var=0;
+		else 
+			var=1;
+		return var;
+		
 	}
 
 }

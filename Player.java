@@ -15,7 +15,7 @@ public class Player {
 	   }
 	
 	private void intialisePlayer(){
-		appearance = '@';
+		appearance = 'D';
 		rowCoord = 1;
 		colCoord = 1;
 	}
