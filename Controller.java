@@ -167,4 +167,8 @@ public class Controller {
 		int[] scoreAndLives = {score,lives};
 		return scoreAndLives;
 	}
+
+	public int getLives() {
+		return this.lives;
+	}
 }
